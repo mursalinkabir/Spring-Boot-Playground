@@ -1,14 +1,21 @@
 package com.in28minutes.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+// making course connect with table
+@Entity
 public class Course {
-
+	@Id
 	private long id;
+	//@Column(name="name")
+	// for now we do not needto map as same name is bean in table
 	private String name;
+	//@Column(name="author")
 	private String author;
 	public Course() {
-		
+
 	}
-	
+
 	public void setId(long id) {
 		this.id = id;
 	}
