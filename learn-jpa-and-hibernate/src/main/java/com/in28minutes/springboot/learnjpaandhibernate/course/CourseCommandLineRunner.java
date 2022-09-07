@@ -17,9 +17,9 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 	//this actually runs the code at startup
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		repository.insert(new Course(1, "learn aws now", "in28minutes"));
-		repository.insert(new Course(2, "learn azure now", "in28minutes"));
-		repository.insert(new Course(3, "learn gcp now", "in28minutes"));
+		repository.insert(new Course(1, "learn aws jpa", "in28minutes"));
+		repository.insert(new Course(2, "learn azure jpa", "in28minutes"));
+		repository.insert(new Course(3, "learn gcp jpa", "in28minutes"));
 		
 		repository.deleteById(1);
 		System.out.println(repository.findById(2));
